@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+body{
+    background-color: hsl(210, 46%, 95%);
+    font-size: 11.8px;
+}
+
+/* ----------Main Container------------- */
+
+.main-container{
+    /* border: 1px solid black; */
+    width: 75%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 11vh;
+}
+.container1{
+    width: 72%;
+    /* background-color: red; */
+}
+.container1 .row1{
+    display: flex;
+    justify-content: space-between;
+}
+.container1 .col1, .container1 .col4{
+    width: 56%;
+    background-color: hsl(263, 55%, 52%);
+    border-radius: 15px;
+}
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+    font-size: .8em;
+}
+.about img{
+    border-radius: 50%;
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-right: .9rem;
+    border: 2px solid hsl(210, 46%, 95%);
+}
+.about .name{
+    color: hsl(210, 46%, 95%);
+    margin-bottom: 2px;
+}
+.about .edu{
+    color: hsl(210, 46%, 95%);
+    opacity: 50%;
+}
+.container1 .col2{
+    width: 24%;
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 15px;
+}
+.para1{
+    color: white;
+    font-size: 1.5em;
+    margin-top: 1.2rem;
+}
+.para2{
+    color: hsl(210, 46%, 95%);
+    opacity: 70%;
+    margin-top: 1.1rem;
+    font-size: 1em;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.container2{
+    width: 21.5%;
+}
+.col3{
+    background-color: white;
+    width: 24%;
+    border-radius: 15px;
+}
+.col5{
+    background-color: white;
+    border-radius: 15px;
+}
+.col5 .about .name, .col3 .about .name{
+    color: hsl(219, 29%, 14%);
+    margin-bottom: 2px;
+}
+.col5 .about .edu, .col3 .about .edu{
+    color: hsl(219, 29%, 14%);
+    opacity: 50%;
+}
+.col5 .para1,.col3 .para1{
+    color: hsl(219, 29%, 14%);
+    font-size: 1.5em;
+    margin-top: 1.2rem;
+}
+.col5 .para2, .col3 .para2{
+    color: hsl(219, 29%, 14%);
+    opacity: 70%;
+    margin-top: 1.1rem;
+    font-size: 1em;
+}
+
+.bottom-row{
+    margin-top: 40px;
+}
+/* Common css */
+.padding-2rem{
+    padding: 1.7rem;
+}
+
+@media (max-width:800px){
+    body{
+        padding: 1.9rem;
+        font-size: 12.8px;
+       
+    }
+   .main-container{
+    flex-direction: column;
+    width: 100%;
+   }
+   .row{
+    flex-direction: column;
+   }
+   .container1{
+    width: 100%;
+   }
+   .container2{
+    width: 100%;
+   }
+   .container1 .col1, .container1 .col2, .col3, .col4{
+    width: 100%;
+   }
+
+   
+}
